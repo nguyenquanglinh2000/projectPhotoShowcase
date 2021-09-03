@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <h1>Start Project</h1>
+    <headerNavbar/>
+    <home/>
   </div>
 </template>
 
 <script>
-
+import home from "./components/layouts/home.vue"
+import headerNavbar from "./components/layouts/headerNavbar.vue"
 export default {
   name: 'App',
   components: {
+    home:home,
+    headerNavbar:headerNavbar,
 
   }
 }
@@ -16,6 +20,6 @@ export default {
 
 <style>
 #app {
-  
+  margin: auto;
 }
 </style>
