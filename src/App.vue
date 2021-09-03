@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <headerNavbar/>
-    <home/>
+    <menu-bar/>
+    <body-home/>
   </div>
 </template>
 
 <script>
-import home from "./components/layouts/home.vue"
+import bodyHome from "./components/layouts/bodyHome.vue"
 import headerNavbar from "./components/layouts/headerNavbar.vue"
+import menuBar from "./components/layouts/menuBar.vue"
 export default {
   name: 'App',
   components: {
-    home:home,
+    bodyHome:bodyHome,
     headerNavbar:headerNavbar,
-
+    menuBar:menuBar
   }
 }
 </script>
